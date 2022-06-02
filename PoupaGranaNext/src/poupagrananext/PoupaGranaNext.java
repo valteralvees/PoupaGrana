@@ -29,6 +29,19 @@ public class PoupaGranaNext {
                 double novoDeposito = teclado.nextDouble();
                 a01.fazerDeposito(novoDeposito);
             break;
+            case 2:
+                System.out.println("Digite o valor que deseja sacar: R$");
+                double novoSaque =teclado.nextDouble();
+                a01.fazerSaque(novoSaque);
+            break;
+            case 3:
+                System.out.println("Você deseja ver o rendimento do seu saldo atual a quantos %?");
+                double porcentagem = teclado.nextDouble();
+                System.out.println("Agora, me diz em quantos meses você deseja ver esse dinheiro rendendo:");
+                int numMeses = teclado.nextInt();
+                a01.simularRendimento(porcentagem, numMeses);
+            break;
+                
             
         }
         
