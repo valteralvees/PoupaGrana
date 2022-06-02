@@ -75,12 +75,13 @@ public class Cliente {
        return saqueFeito;   
    }
    
+   //Método 4
    double simularRendimento(double porcentagem, int numMeses){
        double simulacaoFeita=0;
        mostrarSaldo(); //Pra juntar o valor dos elementos do array em um só.
        double rendimentoEsperado = (saldoTotal[0]/ 100 * porcentagem) * numMeses;
        double valorTotal = saldoTotal[0]+ rendimentoEsperado;
-       System.out.println("O rendimento esperado, do valor de "+saldoTotal[0]+" no tempo de "+numMeses+" meses, a "+porcentagem+"% é de R$"+ rendimentoEsperado+" O valor total ficaria em R$"+valorTotal);
+       System.out.println("O rendimento esperado, do valor de "+saldoTotal[0]+" no tempo de "+numMeses+" meses, a "+porcentagem+"% é de R$"+ rendimentoEsperado+" O valor total ao final do período ficaria em R$"+valorTotal);
        return simulacaoFeita;
    }
     
